@@ -1,0 +1,104 @@
+Ques 1: Important feature of Java8:
+1.Java is platform independent.
+2.It is secure language.
+3.Robust
+Ques2.JVM: It stands for java virtual machine. JVM is used to run the byte code.
+JVM are available in many hardware and software platform .
+JVM provides the runtime environment.
+JVM is a platform dependent .
+Ques 3: Java Lang is super class of all the classes.
+Ques 4: Java does not support multiple inheritance because one class cannot inherited two different classes .
+
+Ques 5:Java is not pure object orientated language beacuse in java all methods are called with the help of object.
+
+Ques6: Overloading method:
+In overloading method , name of method are same but parameter are different.
+Overriding Method:
+In overriding method, name of method and paramertised value are same.
+No, we cannot overload the main method.
+
+Ques7: Access specifier :
+1.Public : Public is accessible by all fields and classes.
+2 Private :Private is accessible within the class.
+3Protected: Protected is accessible by only derived classess.
+difference between access specifier and access modifier is access specifier declares value to the variable and access modifier changes value .
+
+Ques 8JVM: It stands for java virtual machine. It provides runtime environment . JVM executes byte code .
+JRE:It stands java runtime environment . It contains set of liabries and JVM tools.
+JDK:It stands for java development kit. It contains jre and development tools.
+jvm,jre,jdk are platform dependent beacuse configuration of each OS differ.
+
+Ques9:Static keyword: In static keyword, there is no need to create a object it will automatically call the function.
+Final keyword: In final keyword, you have to intilize the value of variable. In this, we can't change value once you intilize .
+
+Ques 11:Abstract class:Abstract class is used to hide data . in this ,it shows functionality to the user.
+Interface: Interface is like empty cell .it is used to inherit more than one class.
+
+Ques12:Super: Super is keyword that is used to call the base class.
+this:Pointing the class member.
+Garbage collector: Heap memory for an object to reclaimed by automatic memory managment is known as garbage collector.Heap memory size may be sized,
+expaned and shrunk depend upon the garbage collector strategy .
+
+Program: write a program to print triangle.
+package AbstractClass;
+
+public class Pattern {
+	int i,j,k=5;
+	public void acc(){
+		for(int i=1;i<=5;i++){
+			for(int j=1;j<k;j++){
+			System.out.print(" ");
+			}
+			k=k-1;
+			for(int j=1;j<=i;j++){
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
+
+	}
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		Pattern oo =new Pattern();
+		oo.acc();
+		
+			
+	}
+
+}
+Program:Write a program in duplicate element of an array.
+package AbstractClass;
+
+public class Duplicate {
+	int num[]={2,4,4,7};
+	public void check(){
+		for(int i=0;i<num.length;i++){
+			for(int j=0;j<i;j++){
+				if (num[i]==num[j])
+						{
+					System.out.println("duplicate value is:"+num[j]);	
+						}
+				
+			}
+			
+		}
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Duplicate oo=new Duplicate();
+		oo.check();
+		
+		
+	}
+
+}
+
+
+
+
+
+
+
